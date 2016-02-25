@@ -12,14 +12,6 @@ public class Main {
 		y = y+b;
 	}
 	
-	void printCircle(){
-		System.out.println();
-	}
-	
-	void printRect(){
-		System.out.println("Rect передвинули, новые координаты центра: x=" + " " + x + " ," + "  y="+ y);
-	}
-	
 	public void zoom(double k){
 		x = x*k;
 		y = y*k;
@@ -31,8 +23,10 @@ public class Main {
 		Circle.main(args);
 		System.out.println("Прямоугольник");
 		Rect.main(args);
+		System.out.println("Квадрат");
+		Square.main(args);
+		main.zoom(2.0);
 		main.move(4.0, 5.0);
-		
 	}
 
 }
